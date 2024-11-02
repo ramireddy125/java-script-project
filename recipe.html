@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Bg Video -->
+  <video autoplay loop muted class="background-video">
+    <source src="https://www.shutterstock.com/shutterstock/videos/1086192224/preview/stock-footage-super-slow-motion-shot-of-wok-pan-with-flying-ingredients-in-the-air-and-fire-flames-filmed-on.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+
+  <header>
+    <nav>
+      <h1>Recipe App</h1>
+      <form>
+        <button class="logout-btn">Logout</button>
+      </form>
+      
+      <div class="wishlist">
+        <i class="fa-solid fa-heart"></i>
+        <span class="wishlist-count">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <h2 class="suggest">Search your favourite Recipes</h2>
+      <div class="search-container">
+        <input type="text" placeholder="Search for Recipes" class="searchbox">
+        <button type="submit" class="searchbtn">Search</button>
+      </div>
+      <div class="recipe-container">
+      </div>
+      <div class="recipe-details">
+        <button type="button" class="closebtn">
+          <i class="fa-solid fa-square-xmark"></i>
+        </button>
+        <div class="recipe-details-content">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
